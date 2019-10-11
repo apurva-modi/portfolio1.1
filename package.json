@@ -1,0 +1,14 @@
+{
+  "name": "apurva_portfolio",
+  "version": "1.0.0",
+  "description": "Responsive portfolio using sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "author": "Apurva Modi",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

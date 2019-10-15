@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,900|Six+Caps');
+
 $ff-s: 'Merriweather', serif;
 $ff-ss: 'Six Caps', sans-serif;
 
@@ -10,8 +11,8 @@ $fw-b: 900;
     letter-spacing: $ls;
     color: $color;
     text-transform: $tt;
-    line-height: $lh
-    font-family= $ff-ss;
+    line-height: $lh;
+    font-family: $ff-ss;
     font-weight: $fw-n;
 
     

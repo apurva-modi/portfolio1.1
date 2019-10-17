@@ -1,0 +1,13 @@
+%container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 55em; //close to 900px
+}
+
+%clearfix{
+    &::after {
+        content: '';
+        display: block;
+        clear:both;
+    }
+}

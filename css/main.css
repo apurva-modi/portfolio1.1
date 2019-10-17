@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,900|Six+Caps");
+.about-me {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 55em;
+}
+
+.about-me::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -517,10 +529,54 @@ h2 {
   display: block;
 }
 
+.about-me {
+  margin-top: 3em;
+}
+
+.about-img {
+  max-height: 25em;
+}
+
+@media (min-width: 42em) {
+  .about-img {
+    float: left;
+    margin-right: 1em;
+  }
+}
+
+.about-title {
+  margin-bottom: .25em;
+}
+
+.about-subtitle {
+  margin: .5em 0;
+}
+
 @supports (display: grid) {
   .about-me {
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [port-end];
+        grid-template-columns: [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [port-end];
+  }
+  .about-img {
+    grid-column: port/img;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .about-title {
+    grid-column: name/port;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  .about-subtitle,
+  .about-txt {
+    grid-column: port/port;
   }
 }
 /*# sourceMappingURL=main.css.map */

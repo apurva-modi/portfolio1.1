@@ -1,16 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,900|Six+Caps");
-.about-me {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 55em;
-}
-
-.about-me::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -530,7 +518,16 @@ h2 {
 }
 
 .about-me {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 50em;
   margin-top: 3em;
+}
+
+.about-me::after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .about-img {

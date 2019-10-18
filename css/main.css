@@ -386,6 +386,12 @@ body {
   font-size: .875rem;
 }
 
+@media (min-width: 50em) {
+  body {
+    font-size: 1.125rem;
+  }
+}
+
 img {
   max-width: 100%;
 }
@@ -401,6 +407,12 @@ h1 {
   font-size: 3.125rem;
 }
 
+@media (min-width: 50em) {
+  h1 {
+    font-size: 4.25rem;
+  }
+}
+
 h2 {
   font-size: 2rem;
   letter-spacing: 0.15em;
@@ -409,6 +421,12 @@ h2 {
   line-height: 1;
   font-family: "Six Caps", sans-serif;
   font-weight: 400;
+}
+
+@media (min-width: 50em) {
+  h2 {
+    font-size: 4.125rem;
+  }
 }
 
 .welcome {
@@ -436,6 +454,12 @@ h2 {
   text-align: center;
 }
 
+@media (min-width: 50em) {
+  .welcome h1 {
+    font-size: 3vw;
+  }
+}
+
 .welcome h1 span {
   font-size: 5.5rem;
   letter-spacing: 0.15em;
@@ -445,6 +469,12 @@ h2 {
   font-family: "Six Caps", sans-serif;
   font-weight: 400;
   display: block;
+}
+
+@media (min-width: 50em) {
+  .welcome h1 span {
+    font-size: 10vw;
+  }
 }
 
 .welcome h1::before, .welcome h1::after {
@@ -556,25 +586,49 @@ h2 {
     display: grid;
     -ms-grid-columns: [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [port-end];
         grid-template-columns: [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [port-end];
+    grid-column-gap: .5em;
   }
   .about-img {
-    grid-column: port/img;
+    grid-column: port-start / img-end;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
-    grid-row: 1/2;
+    grid-row: 1 / 2;
+  }
+  @media (min-width: 50em) {
+    .about-img {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 3;
+      grid-row: 1 / 4;
+    }
   }
   .about-title {
-    grid-column: name/port;
+    grid-column: name / port;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
-    grid-row: 1/2;
+    grid-row: 1 / 2;
     -ms-flex-item-align: end;
         -ms-grid-row-align: end;
         align-self: end;
   }
   .about-subtitle,
   .about-txt {
-    grid-column: port/port;
+    grid-column: port / port;
+  }
+  @media (min-width: 50em) {
+    .about-subtitle,
+    .about-txt {
+      grid-column: img-end / port-end;
+    }
+  }
+  .about-subtitle {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+  }
+  .about-txt {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
   }
 }
 
@@ -666,8 +720,15 @@ h2 {
   .portfolio-items {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (minmax(10em, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    gap: 1em;
+  }
+  @media (min-width: 50em) {
+    .portfolio-items {
+      -ms-grid-columns: (1fr)[4];
+          grid-template-columns: repeat(4, 1fr);
+    }
   }
   .portfolio-item.featured {
     -ms-grid-column: 1;
@@ -706,6 +767,41 @@ form {
           flex-direction: column;
 }
 
+@supports (display: grid) {
+  @media (min-width: 50em) {
+    form {
+      display: -ms-grid;
+      display: grid;
+      grid-column-gap: 1em;
+          grid-template-areas: "name    email" "message message" "  .     button";
+    }
+    form .name {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-area: name;
+    }
+    form .email {
+      -ms-grid-row: 1;
+      -ms-grid-column: 2;
+      grid-area: email;
+    }
+    form .message {
+      -ms-grid-row: 2;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 2;
+      grid-area: message;
+    }
+    form .message text-area {
+      height: 20em;
+    }
+    form .button {
+      -ms-grid-row: 3;
+      -ms-grid-column: 2;
+      grid-area: button;
+    }
+  }
+}
+
 label {
   display: block;
   margin-top: 1em;
@@ -719,6 +815,7 @@ textarea {
   display: block;
   padding: .75em;
   width: 100%;
+  min-width: 15em;
   background: #fbfbfc;
   border: 1px solid #A7A7A7;
   font-size: 1.2rem;
@@ -727,6 +824,7 @@ textarea {
 .button {
   display: block;
   width: auto;
+  min-width: auto;
   margin-top: 1em;
   margin-left: auto;
   background: #03AFC2;

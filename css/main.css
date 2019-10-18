@@ -584,7 +584,7 @@ h2 {
   padding: 5em 0;
 }
 
-.portfolio-item {
+.portfolio-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -603,7 +603,7 @@ h2 {
           flex: 1 1 20rem;
 }
 
-.portfolio-item .portfolio-image {
+.portfolio-item img {
   display: block;
   width: 100%;
 }
@@ -657,8 +657,8 @@ h2 {
 .portfolio-link::after {
   content: url(../img/white-arrow.svg);
   display: inline-block;
-  height: 1em;
-  width: 1em;
+  height: .8em;
+  width: .8em;
   margin-left: .5em;
 }
 
@@ -666,8 +666,8 @@ h2 {
   .portfolio-items {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
   .portfolio-item.featured {
     -ms-grid-column: 1;
@@ -675,7 +675,7 @@ h2 {
     grid-column: 1 / span 2;
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
-    grid-row: 1/span 2;
+    grid-row: 1 / span 2;
   }
   .featured .portfolio-title {
     font-size: 5rem;
@@ -683,5 +683,93 @@ h2 {
   .featured .portfolio-desc {
     display: block;
   }
+}
+
+.contact {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 50em;
+  padding: 5rem 0;
+}
+
+.contact h1 {
+  text-align: center;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+  color: #606060;
+}
+
+input,
+textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  padding: .75em;
+  width: 100%;
+  background: #fbfbfc;
+  border: 1px solid #A7A7A7;
+  font-size: 1.2rem;
+}
+
+.button {
+  display: block;
+  width: auto;
+  margin-top: 1em;
+  margin-left: auto;
+  background: #03AFC2;
+  font-size: 2em;
+  letter-spacing: 0.15em;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1;
+  font-family: "Six Caps", sans-serif;
+  font-weight: 400;
+  padding: .5em 1.5em;
+}
+
+footer {
+  background: #223843;
+  padding: 5em 0;
+  text-align: center;
+}
+
+.social-icons {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 15em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 1.75 auto 4em;
+}
+
+.social-icon {
+  width: 15%;
+  height: 15%;
+}
+
+.copyright::before {
+  content: '';
+  display: block;
+  height: 1px;
+  background: white;
+  margin: 4em auto;
+  width: 25%;
 }
 /*# sourceMappingURL=main.css.map */

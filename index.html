@@ -9,133 +9,214 @@
     <title>Apurv Portfolio</title>
 </head>
 <body>
-    <div class="welcome">
-        <h1>Welcome to my<span> Portfolio </span> </h1>
-    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+            <!--li><a href="#contact">contact</a></li>
+            <li><a href="#contact">contact</a></li-->
+        </ul>
+    </nav>
+    <div class="container-all">
+        <div class="welcome" id = "home">
+            <button class="menu-button">
+                    <svg class="hamburger" x="0px" y="0px"
+                    viewBox="0 0 30 17" height="17" width="30" >
+                        <g transform="translate(-15 -15)">
+                            <rect x="15" y="16" class="st0" width="30" height="2"/>
+                        </g>
+                        <g transform="translate(-15 -9)">
+                            <rect x="15" y="16" class="st0" width="30" height="2"/>
+                        </g>
+                        <g transform="translate(-15 -3)">
+                            <rect x="15" y="16" class="st0" width="30" height="2"/>
+                        </g>
+                    </svg>
 
-    <section class="intro">
-        
-        <div class="intro-left">
-            <img src="img/welcome-01.png" alt="">
-        </div>
-        
-        <div class="intro-middle">
-            <h2>Making it happen</h2>
-            <p>Graduate Computer Science Student @ OLD DOMINION UNIVERSITY
-                Full time Bayesian, part time Frequentist, that's why I use Gradient Descent, it gives direction a​nd it doesn't pretend</p>
-        </div>
-        
-        <div class="intro-right">
-            <img src="img/welcome-02.png" alt="">
-        
-        </div>    
-    </section>
+                    <svg class="close-icon" x="0px" y="0px"
+                    viewBox="0 0 30 17" height="17" width="30">
+                    <g transform="translate(-15 -15)">
+                        <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                        35.8,16.5 37,17.7 	"/>
+                    </g>
+                 </svg> 
 
-    <section class="about-me">
-        <img class="about-img" src="img/apurv-portfolio.png" alt="">
-        <h1 class="about-title">Apurva Portfolio</h1>
-        <h2 class="about-subtitle">ML/AI Enthusiast & Developer</h2>
-        <div class="about-txt">
+            </button>
+            <h1>Welcome to my<span> Portfolio </span> still work in progress... </h1>
+        </div>
+
+        <section class="intro">
             
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet sequi dolore explicabo, perspiciatis molestiae consequatur aperiam. Corrupti repudiandae voluptates voluptatem, magnam quas culpa, magni animi dolorum blanditiis hic, cum deserunt.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, earum quo? Illo sed dicta, corrupti accusamus amet nostrum labore maxime hic provident quisquam eligendi nulla. Quaerat quia corporis pariatur earum?</p>
-        
-        </div>
-
-    </section>
-
-    <section class="portfolio">
-        
-            <h1>My Work</h1>
-            <div class="portfolio-items">
-                
-                <!-- !Portfoilo item 1-->
-                <figure class="portfolio-item featured">
-                    <img src="img/portfolio-01.jpg" alt="">
-                    <figcaption>
-                        <h2 class="portfolio-title">Project Name</h2>
-                        <p class="portfolio-desc">A short description could go fine  </p>
-                        <a href="#" class="portfolio-link">More Info </a>
-                    </figcaption>
-                </figure>
-
-
-                <!-- !Portfoilo item 2 -->
-                <figure class="portfolio-item">
-                        <img src="img/portfolio-02.jpg" alt="">
-                        <figcaption>
-                            <h2 class="portfolio-title">Project Name</h2>
-                            <p class="portfolio-desc">A short description could go fine  </p>
-                            <a href="#" class="portfolio-link">More Info </a>
-                        </figcaption>
-                    </figure>
-                
-                <!-- !Portfoilo item 3-->
-                <figure class="portfolio-item">
-                        <img src="img/portfolio-03.jpg" alt="">
-                        <figcaption>
-                            <h2 class="portfolio-title">Project Name</h2>
-                            <p class="portfolio-desc">A short description could go fine  </p>
-                            <a href="#" class="portfolio-link">More Info </a>
-                        </figcaption>
-                    </figure>
-
-                
-                <!-- !Portfoilo item 4-->
-                <figure class="portfolio-item">
-                        <img src="img/portfolio-04.jpg" alt="">
-                        <figcaption>
-                            <h2 class="portfolio-title">Project Name</h2>
-                            <p class="portfolio-desc">A short description could go fine  </p>
-                            <a href="#" class="portfolio-link">More Info </a>
-                        </figcaption>
-                    </figure>
-
-                
-                 <!-- !Portfoilo item 5-->
-                <figure class="portfolio-item">
-                        <img src="img/portfolio-05.jpg" alt="">
-                        <figcaption>
-                            <h2 class="portfolio-title">Project Name</h2>
-                            <p class="portfolio-desc">A short description could go fine  </p>
-                            <a href="#" class="portfolio-link">More Info </a>
-                        </figcaption>
-                    </figure>
-                
-
+            <div class="intro-left">
+                <img src="img/welcome-01.png" alt="">
             </div>
-       
-    </section>
-
-    <section class="contact">
-        <h1>Contact Me</h1>
-        <form action="">
-            <label for="name" class="name"  class="name">Name:
-                <input type="text" id="name">
-            </label>
             
-            <label for="email"  class="email" class="email">Email:
-                <input type="email" id="email">
-            </label>
+            <div class="intro-middle">
+                <h2>Making it happen</h2>
+                <p>Full time Graduate Computer Science Student @ <a style="color:#03AFC2;" href="https://www.odu.edu/"> OLD DOMINION UNIVERSITY</a></p>
+                <p> Full time Bayesian, part time Frequentist, that's why I use Gradient Descent, it gives direction a​nd it doesn't pretend</p>
+            </div>
+            
+            <div class="intro-right">
+                <img src="img/welcome-02.png" alt="">
+            
+            </div>    
+        </section>
 
-            <label message="message" class="message">Message:
-                <textarea name="" id="message"></textarea>
-            </lable>
+        <section class="about-me" id="About">
+        
+            <img class="about-img" src="img/apurv-portfolio.png" alt="">    
+            <h1 class="about-title">Apurva Portfolio</h1>
+            <h2 class="about-subtitle"> A Developer  and  a ML/AI Enthusiast </h2>
+            <div class="about-txt">
+                
+                <p>Your vibes attract your tribes. </p>
+                <p>Learner by passion and software engineer to be by choice</p>
+                <p>I work in a thoughtful, comprehensive & purpose-driven manner with passion and 
+                    integrity to deliver results for my work as well as for my team. 
+                    I believe that the small details can make the big impact in life.</p>
+            
+            </div>
 
-            <input class="button form-button" type="submit" value="SEND">
-        </form>
-    </section>
+        </section>
 
-    <footer>
-        <p>Follow me on Social Media</p>
-        <div class="social-icons">
-            <img src="img/twitter.svg" alt="twitter" class="social-icon">
-            <img src="img/linkedin.svg" alt="linkedin" class="social-icon">
-            <img src="img/instagram.svg" alt="instagram" class="social-icon">
-            <img src="img/github.svg" alt="github" class="social-icon">
-        </div>
-        <p class="copyright">Copyright © 2018-3018 No Copyright Apurva Modi · No rights reserved </p>
-    </footer>
+        <section class="portfolio" id ="portfolio">
+            
+                <h1>My Work</h1>
+                <h2><span>I swear , I make Beautiful Things, you’ll love.</span></h2>
+                <div class="portfolio-items">
+                    
+                    <!-- !Portfoilo item 1-->
+                    <figure class="portfolio-item featured1">
+                        <img src="img/imageTransferCopy.jpg" alt="">
+                        <figcaption>
+                            <h2 class="portfolio-title">Image Style Transfer</h2>
+                            <p class="portfolio-desc">Based on Gatsy CVPR 2016- implemented Neural Style transfer using CNN</p>
+                            <a href="https://github.com/apurva-modi/CS722-Machine_learning" class="portfolio-link">More Info </a>
+                        </figcaption>
+                    </figure>
+
+
+                    <!-- !Portfoilo item 2 -->
+                    <figure class="portfolio-item">
+                            <img src="img/santaPrimePathsCopy.jpg" alt="">
+                            <figcaption>
+                                <h2 class="portfolio-title">Traveling Santa prime paths</h2>
+                                <p class="portfolio-desc">Using Genetic Algorithm tried solving the santa prime paths</p>
+                                <a href="https://www.kaggle.com/c/traveling-santa-2018-prime-paths/" class="portfolio-link">More Info </a>
+                            </figcaption>
+                        </figure>
+                    
+                    <!-- !Portfoilo item 3-->
+                    <figure class="portfolio-item">
+                            <img src="img/blockchainJS.png" alt="">
+                            <figcaption>
+                                <h2 class="portfolio-title">Blockchain in JavaScript</h2>
+                                <p class="portfolio-desc">Created a basic merchant and customer blockchain.</p>
+                                <a href="https://github.com/apurva-modi/Blockchain-in-JS" class="portfolio-link">More Info </a>
+                            </figcaption>
+                        </figure>
+
+                    
+                    <!-- !Portfoilo item 4-->
+                    <figure class="portfolio-item">
+                            <img src="img/dataScienceCopy.jpg" alt="">
+                            <figcaption>
+                                <h2 class="portfolio-title">Data Science Projects </h2>
+                                <p class="portfolio-desc">Contains a list of data science projects. </p>
+                                <a href="https://github.com/apurva-modi/Data-Science-Projects-" class="portfolio-link">More Info </a>
+                            </figcaption>
+                        </figure>
+
+                    
+                    <!-- !Portfoilo item 5-->
+                    <figure class="portfolio-item ">
+                            <img src="img/gdpNplCopy.jpg" alt="">
+                            <figcaption>
+                                <h2 class="portfolio-title">GDP and NPL Analysis</h2>
+                                <p class="portfolio-desc">The project is a part of Data Visualization class and talks about two important economic aspects Gross Domestic Product (GDP) and Non-performing Loan (NPL). </p>
+                                <a href="https://github.com/apurva-modi/Data-Visualization-GDP-NPL" class="portfolio-link">More Info </a>
+                            </figcaption>
+                        </figure>
+    <!-- !Portfoilo item 6-->
+                        <figure class="portfolio-item featured2">
+                                <img src="img/portfolio-01.jpg" alt="">
+                                <figcaption>
+                                    <h2 class="portfolio-title">For more and latest commits </h2>
+                                    <p class="portfolio-desc"> </p>
+                                    <a href="https://github.com/apurva-modi" class="portfolio-link"> Click Here</a>
+                                </figcaption>
+                        </figure>
+    <!-- !Portfoilo item 7-->
+                        <figure class="portfolio-item featured2">
+                                <img src="img/portfolio-05.jpg" alt="">
+                                    <figcaption>
+                                        <h2 class="portfolio-title">For more and latest commits </h2>
+                                        <p class="portfolio-desc"> </p>
+                                        <a href="https://github.com/apurva-modi" class="portfolio-link"> Click Here</a>
+                                    </figcaption>
+                        </figure>
+    <!-- !Portfoilo item 8-->
+                        <figure class="portfolio-item featured2">
+                                <img src="img/portfolio-03.jpg" alt="">
+                                    <figcaption>
+                                        <h2 class="portfolio-title">For more and latest commits </h2>
+                                        <p class="portfolio-desc"> </p>
+                                        <a href="https://github.com/apurva-modi" class="portfolio-link"> Click Here</a>
+                                    </figcaption>
+                        </figure>
+                            
+                    <!-- ! For more projects -->
+                    <figure class="portfolio-item featured2">
+                            <img src="img/portfolio-02.jpg" alt="">
+                            <figcaption>
+                                <h2 class="portfolio-title">For more and latest commits </h2>
+                                <p class="portfolio-desc"> </p>
+                                <a href="https://github.com/apurva-modi" class="portfolio-link"> Click Here</a>
+                            </figcaption>
+                        </figure>
+
     
+
+                </div>
+        
+        </section>
+
+        <section class="contact" id ="contact">
+            <h1>Contact Me</h1>
+            <p><span>Get in touch</span> Give me some basic information.
+                    I will try to get back to you as soon as I can
+                    if I am not sleeping.</p>
+            <form action="">
+                <label for="name" class="name"  class="name">Name:
+                    <input type="text" id="name">
+                </label>
+                
+                <label for="email"  class="email" class="email">Email:
+                    <input type="email" id="email">
+                </label>
+
+                <label message="message" class="message">Message:
+                    <textarea name="" id="message"></textarea>
+                </lable>
+
+                <input class="button form-button" type="submit" value="SEND">
+            </form>
+        </section>
+
+        <footer>
+            <p>Follow me on Social Media</p>
+            <div class="social-icons">
+                <a href="https://twitter.com/ApurvaModi2" class="social-icon" ><img src="img/twitter.svg" alt="twitter" ></a>
+                <a href="https://www.linkedin.com/in/apurva-modi/" class="social-icon" ><img src="img/linkedin.svg" alt="linkedin" ></a>
+                <a href="https://www.instagram.com/code_er_404/" class="social-icon" ><img src="img/instagram.svg" alt="instagram"></a> 
+                <a href="https://github.com/apurva-modi" class="social-icon"><img src="img/github.svg" alt="github" > </a>
+            </div>
+            <p class="copyright">Copyright © 2018-3018 No Copyright Apurva Modi · No rights reserved </p>
+        </footer>
+    </div>
+ <script src = "js/nav.js"> </script>   
 </body>
 </html>

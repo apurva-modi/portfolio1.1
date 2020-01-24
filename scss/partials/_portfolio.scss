@@ -70,21 +70,22 @@
   
   @supports (display: grid) {
     .portfolio-items {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
-      gap: 1em;
+      display: flex;
+      grid-template-columns: repeat(1, 1fr);
+      gap: .25em;
   
        @include mq {
          grid-template-columns: repeat(4, 1fr);
+         display: grid;
        }
     }
     
-    .portfolio-item.featured {
+    .portfolio-item.featured1 {
       grid-column: 1 / span 2;
       grid-row: 1 / span 2;
     }
-  
-    .featured{
+
+    .featured1{
       .portfolio-title {
         font-size: 5rem;
       }
